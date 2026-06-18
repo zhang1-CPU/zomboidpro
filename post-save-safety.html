@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="article-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Build 42 Save Safety Guide ?Project Zomboid Survival Hub</title>
+  <meta name="description" content="How to backup, restore, and protect your Project Zomboid save files during Build 42 updates. Never lose 100+ hours of progress again." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zomboidpro.it.com/post-save-safety.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="site-header glass">
+  <div class="container header-inner">
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Guides <span class="guides-count">5</span> <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="sandbox.html"><span class="dd-icon">&#9881;</span> Disable Zombie Respawn</a>
+          <a href="population-settings.html"><span class="dd-icon">👥</span> Population Settings</a>
+          <a href="base-building.html"><span class="dd-icon">🏠</span> Base Building</a>
+          <a href="mods-must-have-2026.html"><span class="dd-icon">🌐</span> PVE Servers & Mods</a>
+          <a href="b42-mods-working.html"><span class="dd-icon">🔧</span> B42 Mod Compatibility</a>
+        </div>
+      </div>
+      <a href="posts.html" class="active">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="posts.html">Posts</a>
+    <span class="sep">/</span>
+    <span>Save Safety Guide</span>
+  </div>
+  <article>
+    <h1>Build 42 Save Safety: How to Update Without Losing Your Progress</h1>
+    <div class="article-meta">
+      <span class="updated-badge">New</span>
+      <span>May 9, 2026</span>
+      <span>Build 42</span>
+      <span>~5 min read</span>
+    </div>
+    <p>
+      Build 42 is still receiving frequent patches. Every update carries a risk of save corruption. Here is exactly how to protect your saves so you never lose 100+ hours of progress.
+    </p>
+    <h2>Where Your Save Files Are Located</h2>
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead>
+          <tr><th>OS</th><th>Save Location</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Windows</strong></td><td><code>C:\Users\&lt;YourName&gt;\Zomboid</code></td></tr>
+          <tr><td><strong>Mac</strong></td><td><code>~/Zomboid</code></td></tr>
+          <tr><td><strong>Linux</strong></td><td><code>~/Zomboid</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Inside the <code>Zomboid</code> folder, your save files are in the <code>saves</code> subdirectory. Each save has its own folder named after the save.</p>
+    <h2>How to Backup Before Updating</h2>
+    <ol>
+      <li><strong>Exit the game completely</strong> ?Do not backup while the game is running.</li>
+      <li><strong>Go to your Zomboid folder</strong> (see location table above).</li>
+      <li><strong>Copy the entire <code>saves</code> folder</strong> to a safe location (external drive, cloud storage, or a separate folder).</li>
+      <li><strong>Also copy the <code>options.ini</code> and <code>SandboxVars.lua</code></strong> files if you have custom settings.</li>
+      <li><strong>Update the game</strong> through Steam.</li>
+      <li><strong>Launch the game and test your save</strong> before deleting the backup.</li>
+    </ol>
+    <div class="callout danger">
+      <p><strong>Never skip this step:</strong> Build 42 patches can corrupt save files. Always backup first, even for small patches.</p>
+    </div>
+    <h2>How to Restore a Corrupted Save</h2>
+    <ol>
+      <li><strong>Exit the game.</strong></li>
+      <li><strong>Delete the corrupted save folder</strong> in <code>Zomboid/saves/</code>.</li>
+      <li><strong>Paste your backup</strong> into the <code>saves</code> folder.</li>
+      <li><strong>Launch the game</strong> and load the restored save.</li>
+    </ol>
+    <h2>Automated Backup Strategy</h2>
+    <ul>
+      <li><strong>Before every game session:</strong> Quick copy your saves folder.</li>
+      <li><strong>Before every game update:</strong> Full backup to cloud storage.</li>
+      <li><strong>Weekly:</strong> Keep at least 3 generations of backups (Week 1, Week 2, Week 3).</li>
+      <li><strong>Use backup tools:</strong> Tools like FreeFileSync or Windows Backup can automate this process.</li>
+    </ul>
+    <div class="callout success">
+      <p><strong>Pro Tip:</strong> Name your backups with dates: <code>PZ_Backup_2026-05-09</code>. This way you can always find a known-good save from a specific date.</p>
+    </div>
+  </article>
+  <section class="related-section">
+    <h3>Related Posts</h3>
+    <div class="related-grid">
+      <a href="post-beginner-supplies.html" class="card">
+        <h3>Beginner Supply Guide 2026</h3>
+        <p>Exact numbers for water, gas, beer, and food stockpiles.</p>
+      </a>
+      <a href="post-week1-mistakes.html" class="card">
+        <h3>First Week Mistakes</h3>
+        <p>Common beginner errors that kill runs on Day 1?.</p>
+      </a>
+      <a href="posts.html" class="card">
+        <h3>?All Posts</h3>
+        <p>View the complete list of daily guides and tips.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="comments-section">
+    <h3>💬 Join the Discussion</h3>
+    <p class="comments-intro">Have questions, tips, or experiences to share? Leave a comment below using your GitHub account. Your insights help other survivors!</p>
+    <div class="comments-box">
+      <div id="giscus-comments"></div>
+      <noscript>
+        <p>Please enable JavaScript to view comments. Or discuss directly on <a href="https://github.com/zhang1-CPU/zhang1-CPU.github.io/discussions" class="github-link" target="_blank" rel="noopener">GitHub Discussions ?/a></p>
+      </noscript>
+    </div>
+  </section>
+</main>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">?Top</button>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub ?Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

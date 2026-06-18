@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="article-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How Zombies Detect You in Build 42 ?Sound, Sight, and Horde Mechanics | Project Zomboid Guide</title>
+  <meta name="description" content="Project Zomboid Build 42 zombie behavior explained. How sound propagation works, line of sight rules, how hordes form, and when to fight vs. flee." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zomboidpro.it.com/post-zombie-behavior.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="site-header glass">
+  <div class="container header-inner">
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">指南 <span class="guides-count">5</span> <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="post-map-rosewood.html"><span class="dd-icon">&#9881;</span> Map Guides</a>
+          <a href="post-b42-infection-guide.html"><span class="dd-icon">&#128123;</span> B42Ⱦϵͳ</a>
+          <a href="post-week1-mistakes.html"><span class="dd-icon">&#128276;</span> </a>
+        </div>
+      </div>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="posts.html">Posts</a>
+    <span class="sep">/</span>
+    <span>Zombie Behavior Guide</span>
+  </div>
+  <article>
+    <h1>How Zombies Detect You in Build 42 ?Sound, Sight, and Horde Mechanics</h1>
+    <div class="article-meta">
+      <span>Written for Build 42</span>
+      <span>2026-05-11</span>
+      <span>~7 min read</span>
+    </div>
+    <p>
+      Understanding how zombies find you matters more than any combat technique. If you know what triggers them and how they move, you can avoid most dangerous encounters without throwing a single punch.
+    </p>
+
+    <h2>What Zombies Use to Find You</h2>
+    <p>
+      Two senses: sound and sight. That's it.
+    </p>
+
+    <h3>How Sound Works</h3>
+    <p>
+      Zombies hear everything. Here's the breakdown from loudest to quietest:
+    </p>
+    <ul>
+      <li><strong>Gunshots</strong> ?Attract zombies across the entire map tile. Don't fire unless you have no other choice.</li>
+      <li><strong>Sprinting</strong> ?Footsteps carry two or three blocks. Holding Shift for a full sprint is louder than a light jog.</li>
+      <li><strong>Smashing windows</strong> ?Loud enough to pull zombies from one or two blocks away.</li>
+      <li><strong>Banging on walls</strong> ?A technique for luring zombies away. Sound reaches roughly one block.</li>
+      <li><strong>Walking</strong> ?Only audible to zombies in adjacent tiles. Much safer.</li>
+      <li><strong>Sneaking</strong> ?Nearly silent. Crouching zombies will barely register your footsteps.</li>
+    </ul>
+    <p>
+      Important: sound travels through walls. Boarded windows don't block sound. Zombies outside can hear you moving around inside just fine. Boarding windows only blocks line of sight, not noise.
+    </p>
+
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead>
+          <tr><th>Action</th><th>Noise Level</th><th>Attraction Range</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Gunshot</strong></td><td>Extreme</td><td>Entire map tile</td></tr>
+          <tr><td><strong>Chainsaw</strong></td><td>Extreme</td><td>Entire tile (while running)</td></tr>
+          <tr><td><strong>Sprinting</strong></td><td>High</td><td>2? blocks</td></tr>
+          <tr><td><strong>Breaking window</strong></td><td>High</td><td>1? blocks</td></tr>
+          <tr><td><strong>Banging on walls</strong></td><td>Medium</td><td>~1 block</td></tr>
+          <tr><td><strong>Walking</strong></td><td>Low</td><td>Adjacent tiles only</td></tr>
+          <tr><td><strong>Sneaking</strong></td><td>Minimal</td><td>Only nearby zombies</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Line of Sight Rules</h3>
+    <p>
+      Zombies detect movement within their visual range, but there are nuances:
+    </p>
+    <ul>
+      <li><strong>They see movement, not stationary targets</strong> ?If you stand perfectly still, a zombie can walk right past you without noticing.</li>
+      <li><strong>Sheets and curtains block sight</strong> ?Cover your windows and zombies can't see you inside, even with lights on.</li>
+      <li><strong>Light makes you visible at night</strong> ?A lit room with uncovered windows is basically a beacon. Cover them.</li>
+      <li><strong>Without triggers, zombies wander randomly</strong> ?No sound, no sight = aimless movement.</li>
+    </ul>
+    <p>
+      The golden rule: if you can see a zombie through a window, it can see you. Cover every ground-floor window the moment you enter a building.
+    </p>
+
+    <h2>How Hordes Form</h2>
+    <p>
+      A horde isn't a pre-existing group wandering around. It's a gathering event triggered by sustained noise:
+    </p>
+    <ol>
+      <li><strong>Trigger:</strong> A gunshot, chainsaw, or mass zombie kills create a loud noise event.</li>
+      <li><strong>Gathering:</strong> Zombies from surrounding blocks all converge on the sound source.</li>
+      <li><strong>Dispersal:</strong> If they find nothing, they gradually wander off ?but many will linger nearby.</li>
+      <li><strong>Re-triggering:</strong> Make another loud noise while they're still in the area, and they all come back.</li>
+    </ol>
+    <p>
+      Never fight a horde. Even ten zombies will overwhelm you. If you accidentally pull one together, leave the area immediately. Don't come back until they've fully dispersed.
+    </p>
+
+    <h2>When to Sneak, When to Fight, When to Run</h2>
+    <ul>
+      <li><strong>Sneak and avoid</strong> ?Default strategy for most encounters, especially in unfamiliar areas or low light. Lowest risk.</li>
+      <li><strong>Melee combat</strong> ?1? isolated zombies, and only if you have a clear escape route behind you.</li>
+      <li><strong>Ranged weapons</strong> ?Last resort when you're surrounded and can't break out. Remember: gunfire attracts more.</li>
+      <li><strong>Run</strong> ?4+ zombies or a triggered horde. If your stamina is above 50%, just leave.</li>
+    </ul>
+
+    <h2>Zombie Behavior in Different Conditions</h2>
+    <ul>
+      <li><strong>Winter</strong> ?Zombies move slower in freezing temperatures. Best time for outdoor supply runs.</li>
+      <li><strong>Rain</strong> ?Ambient rain noise masks your footsteps slightly, making stealth more effective.</li>
+      <li><strong>Night</strong> ?Zombies don't sleep. They wander at night just like during the day, but your visibility is worse, so accidental encounters are more likely.</li>
+    </ul>
+
+    <h2>Practical Tips That Save Runs</h2>
+    <ul>
+      <li><strong>Bang on walls to redirect zombies</strong> ?Right-click a wall and select "Bang on Wall." Pulls nearby zombies toward the sound so you can slip past on the other side.</li>
+      <li><strong>Closed doors block line of sight</strong> ?Enter a room, shut the door behind you, and zombies can't see you anymore.</li>
+      <li><strong>Second floors are safer than first</strong> ?Zombies don't climb ladders. They do use stairs, but removing a staircase makes a room zombie-proof.</li>
+      <li><strong>80% stealth, 20% combat</strong> ?Your goal isn't to kill zombies. It's to survive. Avoid fights you don't need to take.</li>
+    </ul>
+
+    <p style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.88rem;">
+      This guide was put together by players who've died to learn this stuff so you don't have to. Updated as the game changes.
+    </p>
+  </article>
+
+  <section class="related-section">
+    <h3>Related Posts</h3>
+    <div class="related-grid">
+      <a href="post-weapon-tier.html" class="card">
+        <h3>Best Melee Weapons for Beginners</h3>
+        <p>What to grab first, where to find upgrades, and durability tips.</p>
+      </a>
+      <a href="post-skill-leveling.html" class="card">
+        <h3>Which Skills to Level First</h3>
+        <p>Priority order, training methods, and XP multiplier tips.</p>
+      </a>
+      <a href="posts.html" class="card">
+        <h3>?All Posts</h3>
+        <p>View the complete list of daily guides and tips.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="comments-section">
+    <h3>💬 Join the Discussion</h3>
+    <p class="comments-intro">Have questions, tips, or experiences to share? Leave a comment below using your GitHub account. Your insights help other survivors!</p>
+    <div class="comments-box">
+      <div id="giscus-comments"></div>
+      <noscript>
+        <p>Please enable JavaScript to view comments. Or discuss directly on <a href="https://github.com/zhang1-CPU/zhang1-CPU.github.io/discussions" class="github-link" target="_blank" rel="noopener">GitHub Discussions ?/a></p>
+      </noscript>
+    </div>
+  </section>
+</main>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">?Top</button>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub ?Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-of-service.html">Terms</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

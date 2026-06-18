@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Building Guide - Project Zomboid Survival Hub</title>
+    <meta name="description" content="Complete Project Zomboid base building guide for beginners: safe base location, defense systems, power & water, farming, and best base spots for all maps.">
+    <meta name="keywords" content="Project Zomboid base building, safe house guide, base defense, generator guide, farming zomboid">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        :root {
+            --primary: #f7931a;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+            --text: #333333;
+            --border: #e0e0e0;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        nav {
+            background-color: var(--dark);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            justify-content: center;
+        }
+        .nav-container a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-container a:hover, .nav-container a.active {
+            color: var(--primary);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+        header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background-color: var(--light);
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table thead {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        table th, table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        table tbody tr:nth-child(even) {
+            background-color: var(--gray);
+        }
+        .tip-box {
+            padding: 1.2rem;
+            background-color: #fff8e6;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        .tip-box strong {
+            color: var(--dark);
+        }
+        details {
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        summary {
+            padding: 1rem;
+            background-color: var(--gray);
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: "+";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        details[open] summary::after {
+            content: "-";
+        }
+        .details-content {
+            padding: 1rem;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary);
+            color: var(--light);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        .back-to-top:hover {
+            background-color: var(--dark);
+        }
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .section {
+                padding: 1.2rem;
+            }
+            .nav-container {
+                gap: 0.8rem;
+                font-size: 0.9rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            table th, table td {
+                padding: 0.6rem;
+            }
+        }
+    </style>
+    <!-- 已帮你完整植入谷歌全局自动广告代码，无需任何修改 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/">Home</a>
+            <a href="first-week.html">First Week</a>
+            <a href="medical.html">Medical</a>
+            <a href="traits.html">Traits</a>
+            <a href="loot.html">Loot</a>
+            <a href="sandbox.html">Sandbox</a>
+            <a href="mods.html">Mods</a>
+            <a href="population-settings.html">Population Settings</a>
+            <a href="base-building.html" class="active">Base Building</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Project Zomboid Base Building Guide (Build 42 Updated 2026)</h1>
+            <p class="subtitle">The complete beginner's guide to building a safe, self-sufficient base. Learn how to pick the perfect location, defend against zombies, set up power & water, and create a permanent home in the apocalypse.</p>
+        </header>
+
+        <section class="section">
+            <h2>1. How to Pick the Perfect Base Location for Beginners</h2>
+            <p>The #1 mistake new players make is choosing a base that looks cool but is impossible to defend or too far from essential loot. Follow these 3 core rules for your first base:</p>
+            
+            <h3>3 Non-Negotiable Rules for a Beginner Base</h3>
+            <ol>
+                <li><strong>Easy to Defend</strong>: Fewer ground-floor windows, single entry point, and no easy access for zombies to climb up.</li>
+                <li><strong>Close to Essential Loot</strong>: Within walking distance of a grocery store, hardware store, and gas station. No need to drive for basic supplies.</li>
+                <li><strong>Low Zombie Population</strong>: Avoid downtown areas and high-traffic zones. Start in a quiet suburban neighborhood.</li>
+            </ol>
+
+            <div class="tip-box">
+                <strong>Beginner Pro Tip</strong>: For your first run, always pick a single-story or two-story house in Rosewood. It has the lowest zombie population of any map, with all essential loot within a 5-minute walk.
+            </div>
+
+            <h3>Best Map Locations for Your First Base</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Map</th>
+                        <th>Best Spot</th>
+                        <th>Why It's Great for Beginners</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rosewood</td>
+                        <td>Southwest Suburban Houses</td>
+                        <td>Low zombie count, close to the fire station (best early loot), grocery store, and gas station. Perfect for new players.</td>
+                    </tr>
+                    <tr>
+                        <td>Riverside</td>
+                        <td>North Riverside Houses</td>
+                        <td>Quiet neighborhood, close to the hardware store and river access for fishing. Great for long-term farming.</td>
+                    </tr>
+                    <tr>
+                        <td>West Point</td>
+                        <td>Eastern Coastal Houses</td>
+                        <td>Smaller loot zones, easy to clear, with access to fishing and a nearby gas station. Good for solo players.</td>
+                    </tr>
+                    <tr>
+                        <td>Louisville</td>
+                        <td>NOT RECOMMENDED FOR BEGINNERS</td>
+                        <td>Massive zombie hordes, high risk, and easy to get trapped. Only go here once you have a vehicle and reliable gear.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>2. Base Defense: Keep Zombies Out for Good</h2>
+            <p>Even the best location is useless if zombies can break in easily. Follow this step-by-step process to secure your base in the first week.</p>
+
+            <h3>Step 1: Secure the Perimeter (First 24 Hours)</h3>
+            <ol>
+                <li><strong>Board up all ground-floor windows</strong>: Use planks and nails from garages. Every unboarded window is a way for zombies to see you and break in.</li>
+                <li><strong>Cover windows with sheets</strong>: Right-click windows and select "Cover with Sheet" to block zombie line of sight. They won't attack what they can't see.</li>
+                <li><strong>Reinforce your main door</strong>: Use a door barricade (crafted with 2 planks and 2 nails) to make it harder for zombies to break down.</li>
+                <li><strong>Remove stairs for maximum safety</strong>: For two-story houses, use a sledgehammer to destroy the stairs. Use a sheet rope to climb up and down — zombies can't climb sheet ropes.</li>
+            </ol>
+
+            <h3>Step 2: Long-Term Defense Systems</h3>
+            <ul>
+                <li><strong>Log Walls & Fences</strong>: Build a wooden fence around your base to create a perimeter. Log walls are the strongest, but wooden fences work for early defense.</li>
+                <li><strong>Trap Zones</strong>: Place spike traps and pit traps around your perimeter. They will kill zombies that get too close, and alert you to intruders.</li>
+                <li><strong>Watchtowers</strong>: Build a small watchtower to see approaching hordes from a distance. Critical for early warning in multiplayer games.</li>
+                <li><strong>Garage Gate</strong>: If you have a vehicle, build a garage gate to keep your car safe and create a secure entry point.</li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>Critical Warning</strong>: Never use glass walls or large windows for your base. Zombies will see you through them and attack non-stop, even if they can't get in.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>3. Power & Water: Become Fully Self-Sufficient</h2>
+            <p>The power and water will shut off between day 7-14 on default settings. You need to prepare before this happens to avoid running out of clean water and electricity.</p>
+
+            <h3>Water System: Never Run Out of Clean Water</h3>
+            <ol>
+                <li><strong>Stockpile tap water first</strong>: Fill every bucket, pot, bottle, and container you can find with tap water before the shutoff. This will keep you alive while you set up permanent solutions.</li>
+                <li><strong>Build Rain Collector Barrels</strong>: The only permanent way to get water. Each barrel requires 4 planks, 4 nails, and 1 garbage bag.
+                    <ul>
+                        <li>Place barrels on the roof of your base (they only collect rainwater if they are outside and above ground).</li>
+                        <li>Build at least 4 barrels for a solo player, 8+ for multiplayer.</li>
+                        <li>Always boil rainwater before drinking it, unless you have a water filter mod.</li>
+                    </ul>
+                </li>
+                <li><strong>Well Access</strong>: If your base is near a well, you have an infinite source of water. Wells are the best water source in the game, no boiling required.</li>
+            </ol>
+
+            <h3>Power System: Keep Your Fridge & Lights Running</h3>
+            <h4>Generator Guide for Beginners</h4>
+            <ul>
+                <li><strong>Where to find a generator</strong>: Warehouses, construction sites, gas stations, and large residential garages.</li>
+                <li><strong>How to use a generator</strong>: Read the "Electrical 1" skill book to learn how to connect and operate a generator. The Fire Officer occupation starts with this knowledge.</li>
+                <li><strong>Safety Rules</strong>:
+                    <ul>
+                        <li>NEVER place a generator indoors. It will produce carbon monoxide and kill you in your sleep.</li>
+                        <li>Place it at least 5 tiles away from any doors or windows.</li>
+                        <li>Only run it when you need it (to power the fridge, for example). Running it 24/7 will waste gas.</li>
+                    </ul>
+                </li>
+                <li><strong>Gas Storage</strong>: Stockpile gas cans in a secure, non-flammable area. Siphon gas from cars to keep your generator running long-term.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>4. Farming & Food Preservation: Never Starve Again</h2>
+            <p>Once you have a secure base, the next step is to create a permanent food source. Canned food will run out eventually — farming is the only way to survive long-term.</p>
+
+            <h3>Beginner Farming Guide</h3>
+            <ol>
+                <li><strong>Get the right tools</strong>: You need a trowel or shovel, seeds, a watering can, and fertilizer (compost or rotted food).</li>
+                <li><strong>Best crops for beginners</strong>:
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Growth Time</th>
+                                <th>Why It's Great for Beginners</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Potatoes</td>
+                                <td>24 Days</td>
+                                <td>High yield, disease-resistant, and filling. The best all-around crop for new farmers.</td>
+                            </tr>
+                            <tr>
+                                <td>Cabbage</td>
+                                <td>10 Days</td>
+                                <td>Fastest growing crop, perfect for quick food. Great for when you're running low on supplies.</td>
+                            </tr>
+                            <tr>
+                                <td>Carrots</td>
+                                <td>16 Days</td>
+                                <td>Disease-resistant, easy to grow, and can be stored for a long time.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li><strong>Farming Rules</strong>:
+                    <ul>
+                        <li>Water your crops every day, especially in hot weather.</li>
+                        <li>Check for diseases daily. Use the Farming skill book to learn how to treat common crop diseases.</li>
+                        <li>Build a fence around your farm to keep zombies from trampling your crops.</li>
+                        <li>Save seeds from every harvest to keep your farm running indefinitely.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Food Preservation: Make Your Food Last Forever</h3>
+            <ul>
+                <li><strong>Freezing</strong>: Use a generator-powered fridge to freeze vegetables and meat. Frozen food will last for months.</li>
+                <li><strong>Canning</strong>: Use a canning pot and jars to preserve vegetables and fruit. Canned food will never spoil, even without power.</li>
+                <li><strong>Drying</strong>: Build a drying rack to dry meat and fish. Dried food lasts for weeks and is perfect for long loot trips.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>5. Common Base Building FAQ</h2>
+            
+            <details>
+                <summary>Can zombies break down wooden walls?</summary>
+                <div class="details-content">
+                    Zombies can break down wooden doors and weak fences, but they cannot break down log walls or reinforced wooden walls. Log walls are the strongest player-built structure in the vanilla game.
+                </div>
+            </details>
+
+            <details>
+                <summary>Where is the safest base in Project Zomboid?</summary>
+                <div class="details-content">
+                    For beginners, the safest base is a two-story house in the southwest of Rosewood. It has low zombie traffic, is close to all essential loot, and is easy to defend by destroying the stairs. For long-term play, the isolated farmhouses west of Riverside are extremely safe, with access to wells and large farming areas.
+                </div>
+            </details>
+
+            <details>
+                <summary>How many rain collector barrels do I need?</summary>
+                <div class="details-content">
+                    For a solo player, 4-6 rain collector barrels are enough to keep you supplied with water. For 2-4 players, build 8-12 barrels. Always build more than you think you need — droughts can last for weeks in the summer.
+                </div>
+            </details>
+
+            <details>
+                <summary>Can I move a generator once I place it?</summary>
+                <div class="details-content">
+                    Yes! You can pick up and move a generator as long as it is turned off and not connected to any building. Just right-click it and select "Pick Up". You need at least 4 strength to pick up a generator.
+                </div>
+            </details>
+
+            <details>
+                <summary>Should I build a base in Louisville?</summary>
+                <div class="details-content">
+                    Only if you are an experienced player. Louisville has massive zombie hordes, high risk, and is extremely hard to defend. It's great for loot, but terrible for a beginner's first base. Stick to Rosewood, Riverside, or West Point until you're comfortable with the game.
+                </div>
+            </details>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Project Zomboid Survival Hub | All guides updated for Build 42</p>
+        <p>Not affiliated with The Indie Stone. All content is for educational purposes only.</p>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zomboidpro.it.com/</loc><lastmod>2026-06-18</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://zomboidpro.it.com/about.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/</loc><lastmod>2026-05-14</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://zomboidpro.it.com/about.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zomboidpro.it.com/base-building.html</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zomboidpro.it.com/post-map-rosewood.html</loc><lastmod>2026-05-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zomboidpro.it.com/post-map-muldraugh.html</loc><lastmod>2026-05-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -9,6 +9,19 @@
   <url><loc>https://zomboidpro.it.com/post-b42-infection-guide.html</loc><lastmod>2026-05-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://zomboidpro.it.com/post-b42-multiplayer-guide.html</loc><lastmod>2026-05-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zomboidpro.it.com/post-b42-mods-tested.html</loc><lastmod>2026-05-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zomboidpro.it.com/sandbox.html</loc><lastmod>2026-06-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zomboidpro.it.com/posts.html</loc><lastmod>2026-06-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-low-pc-optimization.html</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-food-cooking.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-season-survival.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-skill-leveling.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-multiplayer-guide.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-troubleshooting.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-save-safety.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-beginner-supplies.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-beginner-week1-guide.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-essential-mods-b42.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-custom-playstyles.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zomboidpro.it.com/post-b42-occupation-guide.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/b42-mods-working.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zomboidpro.it.com/mods-must-have-2026.html</loc><lastmod>2026-05-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zomboidpro.it.com/population-settings.html</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
