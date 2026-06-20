@@ -1,14 +1,20 @@
-# PZ Survival Hub - Project Zomboid Guides
-# https://zomboidpro.it.com
-
 User-agent: *
 Allow: /
-
-# Preferred sitemap
+Disallow: /css/*.css
 Sitemap: https://zomboidpro.it.com/sitemap.xml
 
-# Search engine crawlers - full access
+# Allow all search engine crawlers full access
+# Project Zomboid survival guides - fully indexable
+# Updated 2026 for Build 42.18 plus
+
+# Google extended crawling directives (crawl-delay not officially supported but read by Bing/Yandex)
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
 Allow: /
 
 User-agent: Bingbot
@@ -17,58 +23,64 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-User-agent: YandexBot
+User-agent: Yandex
 Allow: /
 
 User-agent: Baiduspider
 Allow: /
 
-User-agent: Slurp
-Allow: /
-
-# Block AI training scrapers (we want search indexing, not training data)
+# Block common AI scrapers (not search engines)
 User-agent: GPTBot
-Disallow: /
-
-User-agent: Google-Extended
 Disallow: /
 
 User-agent: ClaudeBot
 Disallow: /
 
-User-agent: Claude-Web
-Disallow: /
-
 User-agent: CCBot
 Disallow: /
 
-User-agent: meta-externalagent
-Disallow: /
-
-User-agent: Meta-ExternalAgent
-Disallow: /
-
-User-agent: OAI-SearchBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
-
-User-agent: Amazonbot
-Disallow: /
-
-User-agent: Applebot-Extended
+User-agent: Google-Extended
 Disallow: /
 
 User-agent: PerplexityBot
 Disallow: /
 
-User-agent: YouBot
+User-agent: ChatGPT-User
 Disallow: /
 
-# Content signals (per EU Copyright Directive Article 4)
-# Search indexing is allowed; AI training usage is denied
-Content-Signal: search=yes, ai-train=no, ai-input=no
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Well-known for robots directives compliance (RFC 8615)
+Allow: /.well-known/
+
+# Content Signal declaration (Google EU compliant content indexing preferences)
+User-agent: Googlebot
+Allow: /index.html
+Allow: /posts.html
+Allow: /post-map-louisville.html
+Allow: /post-map-rosewood.html
+Allow: /post-map-muldraugh.html
+Allow: /post-map-riverside.html
+Allow: /post-b42-18-update.html
+Allow: /post-farming-guide.html
+Allow: /post-b42-infection-guide.html
+Allow: /post-b42-multiplayer-guide.html
+Allow: /post-b42-mods-tested.html
+Allow: /post-essential-mods-b42.html
+Allow: /post-week1-mistakes.html
+Allow: /post-food-cooking.html
+Allow: /post-low-pc-optimization.html
+Allow: /post-troubleshooting.html
+Allow: /base-building.html
+Allow: /sandbox.html
+Allow: /about.html
