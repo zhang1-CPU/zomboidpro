@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Main Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
   <url>
     <loc>https://zomboidpro.it.com/</loc>
     <lastmod>2026-06-20</lastmod>
@@ -14,8 +13,13 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Map Guides -->
+  <url>
+    <loc>https://zomboidpro.it.com/about.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <!-- Map guides -->
   <url>
     <loc>https://zomboidpro.it.com/post-map-louisville.html</loc>
     <lastmod>2026-06-20</lastmod>
@@ -40,8 +44,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Build 42 Guides -->
+  <!-- Build 42 guides -->
   <url>
     <loc>https://zomboidpro.it.com/post-b42-18-update.html</loc>
     <lastmod>2026-06-20</lastmod>
@@ -72,8 +75,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Survival Guides -->
+  <!-- Survival guides -->
   <url>
     <loc>https://zomboidpro.it.com/post-beginner-supplies.html</loc>
     <lastmod>2026-05-09</lastmod>
@@ -164,8 +166,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Mod Guides -->
+  <!-- Mod guides -->
   <url>
     <loc>https://zomboidpro.it.com/post-essential-mods-b42.html</loc>
     <lastmod>2026-05-09</lastmod>
@@ -184,8 +185,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Base & Farming Guides -->
+  <!-- Base & farming guides -->
   <url>
     <loc>https://zomboidpro.it.com/base-building.html</loc>
     <lastmod>2026-05-07</lastmod>
