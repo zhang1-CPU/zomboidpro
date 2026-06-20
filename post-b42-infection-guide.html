@@ -1,133 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" class="article-page">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zombie Bite Infection Guide ?Project Zomboid Survival Hub</title>
-  <meta name="description" content="Project Zomboid Build 42 infection system explained. Exact infection rates for bites, scratches, and lacerations." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://zomboidpro.it.com/post-b42-infection-guide.html" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LXP583T21M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LXP583T21M');
-  </script>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wqbv0ab9w9");
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1a2e">
+<title>Project Zomboid Infection System Guide 2026 | Knox Infection Mechanics, Scratch vs Bite, Wound Treatment, Disinfectant &amp; Survival Tips for Build 42</title>
+<meta name="description" content="Complete Project Zomboid Build 42 infection system guide. Knox infection mechanics, scratch versus bite differences, wound treatment options, disinfectant use, stitches and practical survival tips for managing injuries.">
+<meta name="keywords" content="Project Zomboid infection system, Knox infection, scratch vs bite, wound treatment, disinfectant, stitches, Build 42 medical guide">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zomboidpro.it.com/post-b42-infection-guide.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F9E1;</text></svg>">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="reading-progress" id="readingProgress"></div>
-<header class="site-header glass">
-  <div class="container header-inner">
-    <div class="brand-block">
-      <a href="index.html" class="site-logo">PZ Survival Hub</a>
-      <p class="site-tagline">Practical survival strategy for Build 42</p>
-    </div>
-    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="site-nav" id="mainNav">
-      <a href="index.html#top">Home</a>
-      <a href="index.html#first-week">First Week</a>
-      <a href="index.html#medical">Medical</a>
-      <div class="nav-dropdown">
-        <button class="dropbtn">指南 <span class="guides-count">5</span> <span class="arrow">&#9660;</span></button>
-        <div class="dropdown-menu">
-          <a href="post-map-rosewood.html"><span class="dd-icon">&#9881;</span> Map Guides</a>
-          <a href="post-b42-infection-guide.html"><span class="dd-icon">&#128123;</span> B42感染系统</a>
-          <a href="post-week1-mistakes.html"><span class="dd-icon">&#128276;</span> 避坑</a>
-        </div>
-      </div>
-      <a href="posts.html">Posts</a>
-      <a href="index.html#faq">FAQ</a>
-    </nav>
-  </div>
+<header class="site-header">
+<div class="container header-inner">
+<div class="brand-block">
+<a href="index.html" class="site-logo">PZ Survival Hub</a>
+<p class="site-tagline">Free Project Zomboid survival guides</p>
+</div>
+<button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">&#x2630;</button>
+<nav class="site-nav" id="mainNav">
+<a href="index.html#first-week">First Week</a>
+<a href="index.html#medical">Medical</a>
+<a href="index.html#traits">Traits</a>
+<a href="index.html#loot">Loot</a>
+<div class="nav-dropdown">
+<button class="dropbtn">Guides <span class="guides-count">25+</span> &#x25BC;</button>
+<div class="dropdown-menu">
+<a href="post-map-louisville.html">&#x1F5FA; Louisville Map</a>
+<a href="post-map-rosewood.html">&#x1F3E0; Rosewood Map</a>
+<a href="post-b42-18-update.html">&#x1F527; Build 42.18 Update</a>
+<a href="post-farming-guide.html">&#x1F33E; Farming Guide</a>
+<a href="post-b42-infection-guide.html">&#x1F9A0; Infection System</a>
+<a href="post-essential-mods-b42.html">&#x2B50; Essential Mods</a>
+<a href="base-building.html">&#x1F3DA; Base Building</a>
+<a href="sandbox.html">&#x2699; Sandbox Settings</a>
+<a href="about.html">&#x2139; About</a>
+<a href="posts.html">&#x1F4DA; All Guides</a>
+</div>
+</div>
+<a href="index.html#faq">FAQ</a>
+<a href="posts.html">All Guides</a>
+<a href="post-map-louisville.html" class="nav-hot-link">&#x1F5FA; Louisville</a>
+</nav>
+</div>
 </header>
-<main class="section container">
-  <div class="breadcrumbs">
-    <a href="index.html">Home</a>
-    <span class="sep">/</span>
-    <a href="posts.html">Posts</a>
-    <span class="sep">/</span>
-    <span>Bite Infection Guide</span>
-  </div>
-  <article>
-    <h1>Zombie Bite Infection Guide: Exact Rates, Timeline & No Cure</h1>
-    <div class="article-meta">
-      <span>Written for Build 42</span>
-      <span>2026-05-11</span>
-      <span>~6 min read</span>
-    </div>
-    <p>The infection system in Project Zomboid is unforgiving. Understanding exactly how it works matters ?because once you're infected, there is no cure.</p>
-
-    <h2>Infection Types ?Not All Wounds Are Equal</h2>
-    <div class="table-wrap">
-      <table class="info-table">
-        <thead><tr><th>Wound Type</th><th>Knox Infection Rate</th><th>Severity</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Bite</strong></td><td>~93%</td><td>Fatal in almost all cases</td></tr>
-          <tr><td><strong>Laceration</strong></td><td>~25%</td><td>Can be survived, but risky</td></tr>
-          <tr><td><strong>Scratch</strong></td><td>~7%</td><td>Most likely to survive</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout danger">
-      <p><strong>There is no cure for Knox Infection.</strong> Once you are infected, your character will die.</p>
-    </div>
-
-    <h2>How to Tell if You're Infected</h2>
-    <ol>
-      <li>You get bitten or scratched by a zombie.</li>
-      <li>If the "Queasy" moodle appears 6-12 hours later with no other cause, it's Knox Infection.</li>
-      <li>Death follows within 2-4 days. There is no cure.</li>
-    </ol>
-
-    <h2>Prevention is Everything</h2>
-    <ul>
-      <li>Wear protective clothing (jackets, long pants, gloves).</li>
-      <li>Avoid fights you don't need.</li>
-      <li>Know when to run (3+ zombies = leave).</li>
-    </ul>
-  </article>
-
-  <section class="related-section">
-    <h3>Related Posts</h3>
-    <div class="related-grid">
-      <a href="post-b42-occupation-guide.html" class="card"><h3>Build 42 Occupation Guide</h3><p>Best occupations, traits, and point optimization.</p></a>
-      <a href="posts.html" class="card"><h3>?All Posts</h3><p>View the complete list of daily guides and tips.</p></a>
-    </div>
-  </section>
-
-  <section class="comments-section">
-    <h3>?? Join the Discussion</h3>
-    <p class="comments-intro">Have questions, tips, or experiences to share? Leave a comment below.</p>
-    <div class="comments-box"><div id="giscus-comments"></div></div>
-  </section>
+<main>
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">Home</a> &raquo; <a href="posts.html">All Guides</a> &raquo; <span>Infection System Guide</span>
+</div>
+<section class="section">
+<div class="section-head">
+<p class="eyebrow">Complete Medical and Infection System Guide for Build 42.18</p>
+<h1>Project Zomboid Infection System Guide 2026</h1>
+<p>Complete Project Zomboid Build 42 infection system guide. Knox infection mechanics, scratch versus bite differences, wound treatment options, disinfectant use, stitches and practical survival tips for managing injuries.</p>
+</div>
+<article class="content-box">
+<h2>&#x1F9A0; Infection Types Overview</h2>
+<p>Project Zomboid features multiple injury infection types requiring different treatment approaches. Knox virus infection from zombie bites always fatal vanilla game without cure. Regular bacterial wound infections from untreated wounds manageable appropriate disinfectant antibiotics available. Simple scratches, lacerations punctures wounds. Understanding infection types essential effective survival. Monitor wounds carefully distinguishing types ensures appropriate response.</p>
+<h2>&#x1F489; Knox Infection Mechanism and Progression</h2>
+<p>Knox infection viral agent transmitted zombie contact. Bite contact always results infection vanilla Project Zomboid 100 percent fatality. Transmission through saliva, contact with open wounds. Initial symptoms anxiety increased thirst. Progression occurs over approximately in game days varies depending sandbox settings. Late symptoms: fever, fatigue, nausea. Death inevitable vanilla without mod intervention. Accept death prepare final run before progression completes. Knox infection fatal confirmed bite contact.</p>
+<h2>&#x1FA78; Scratch vs Laceration vs Bite: Understanding Different Wound Types</h2>
+<p>Scratches lowest risk level infection possible moderate probability depending sandbox settings. Lacerations greater risk require stitches deep cuts risk moderate bleeding. Scratches require bandaging disinfecting monitoring. Bites always fatal vanilla ensure you understand wound type displayed health panel after each zombie contact. Check wound type icon displayed health panel immediately. Scratches, lacerations, bites icons display different visually. Immediately bandage disinfect according wound type.</p>
+<h2>&#x1F3E5; Wound Treatment Options and Recommended Supplies</h2>
+<p>Essential wound treatment. First: bandages ripped sheets stops bleeding primary immediate action. Disinfectant: alcohol, whiskey, iodine, hydrogen peroxide, disinfectant wipes, medical supplies kills bacteria. Stitches suture needle thread deep lacerations require closing. Splints broken bones immobilization. Clean bandages ripped sheets regular inventory changes prevent further infection. Maintain bandage inventory all times. Always maintain emergency kit base including backup supplies.</p>
+<h2>&#x1F9EA; Disinfectant Use and Application Methods</h2>
+<p>Disinfectant application immediately after injury kills surface bacteria reduces infection risk significantly. Apply disinfectant bandage change sequence: clean wound disinfectant, apply new bandage, monitor wound. Repeat process each bandage change while wound healing. Effective disinfectants include rubbing alcohol, whiskey, iodine, hydrogen peroxide medical disinfectant. Maintain supply sufficient disinfectant extended operations. Disinfectant reduces risk regular infection not Knox viral infection.</p>
+<h2>&#x1F489; Stitches, Sutures and Deep Wound Management</h2>
+<p>Deep lacerations require closure using suture needle thread. Stitching closes wound reduces bleeding scarring healing time. Stitching equipment typically available hospitals, clinics medical facilities. Medical clinics hospitals contain equipment. Apply stitches lacerations shortly after injury occurs best results. After stitching continue bandaging disinfecting routine. Deep lacerations require careful extended monitoring. Stitching reduces healing time reduces scarring improves cosmetic outcome.</p>
+<h2>&#x1F48A; Bandaging Routine and Wound Monitoring</h2>
+<p>Establish consistent bandaging routine for wound management. Clean wound disinfectant each bandage change. Apply fresh sterile bandage ripped sheets. Monitor signs including infection discoloration excessive swelling pain increased. Monitor temperature periodically detect fever indicators. Regular consistent bandaging prevents infection accelerates healing. Proper bandage technique reduces scarring. Continue bandaging disinfecting until wound fully heals. Maintain routine prevent wound reopening infection reoccurrence.</p>
+<h2>&#x1F3E5; Medical Inventory Essentials and Location</h2>
+<p>Medical inventory essentials primary survival. Bandages ripped sheets most essential primary always maintain stockpile. Disinfectant alcohol whiskey various types. Splints broken bones. Painkillers including aspirin ibuprofen codeine strong analgesics. Antibiotics prescription reduce bacterial infection. Thermometer monitor fever. First aid kits emergency supplies. Maintain emergency kit inventory home base. Medical supplies storage located hospitals, clinics pharmacies. Stockpile base early establish inventory before accidents occur.</p>
+<h2>&#x1F4A7; Dehydration Risk Fluid Management During Injury</h2>
+<p>Injury recovery increases fluid demands. Injury healing requires hydration for optimal healing. Monitor hydration status regularly illness injury. Maintain water containers inventory base including bottles pots. During fever increase fluid intake significantly. Drinking water reduces dehydration risk speeds recovery. Prioritize hydration equal importance food during recovery phase. Dehydration significantly worsens recovery outcomes survival chances. Dehydration dangerous easily preventable sufficient preparation.</p>
+<h2>&#x1F3DA; Base Medical Station Setup and Organization</h2>
+<p>Designate dedicated medical station base. Medical station should include: all medical supplies centralized location. Storage: first aid kits, bandages, ripped sheets, alcohol, whiskey, disinfectant, suture needle thread, splints, painkillers, antibiotics, thermometers, medicines prescriptions. Storage organization: label container categories supplies. Easy access during emergency critical. Consider building medical station near sleeping quarters recovery. Keep warm area resting speeds healing. Medical station organized accessible essential emergency.</p>
+<h2>&#x1F691; Injury Prevention Strategies and Safe Playstyle</h2>
+<p>Prevention easier treatment. Avoid direct contact with zombies whenever possible. Maintain minimum safe distance. Use longer melee weapons reduce contact risk zombies. Wear protective clothing including gloves jeans heavy shirts reduce injury probability. Avoid combat tired exhausted character reduces reaction time. Never fight zombies cornered escape routes. Plan every engagement escape route. Retreat consistently overextending combat. Safe cautious playstyle survives long term better than aggressive. Safety first survival longer.</p>
+<h2>&#x26A0; Common Infection Mistakes and How to Avoid Them</h2>
+<p>Common infection mistakes frequently experienced players: ignoring wound type misdiagnosing scratch bite. Not bandaging immediately after injury. Neglecting disinfectant allowing bacterial infection develop. Not monitoring wound deterioration over time. Using wrong wound dressings inadequate supplies. Not maintaining sufficient supplies backup stockpile. Poor base organization lack dedicated medical station. Poor hydration during healing. Fighting zombies injured instead resting recovery. Avoid mistakes: maintain careful monitoring routine bandaging supplies preparedness always.</p>
+</article>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head"><p class="eyebrow">Additional Infection Survival Resources</p><h2>Related Guides</h2></div>
+<div class="content-grid">
+<article class="card"><h3>&#x1F3DA; Base Building Guide</h3><p>Dedicated medical station design, supply storage organization, sterile recovery area setup for infection management.</p><p><a href="base-building.html" class="read-more">View Base Building Guide &rarr;</a></p></article>
+<article class="card"><h3>&#x1F5FA; Louisville Map Guide</h3><p>Hospital locations, pharmacy supplies, medical inventory locations. Louisville best source advanced medical equipment.</p><p><a href="post-map-louisville.html" class="read-more">View Louisville Map &rarr;</a></p></article>
+<article class="card"><h3>&#x1F33E; Farming Guide</h3><p>Food self-sufficiency infection recovery nutrition planning, vegetable production healing sustenance.</p><p><a href="post-farming-guide.html" class="read-more">View Farming Guide &rarr;</a></p></article>
+</div>
+</div>
+</section>
+</div>
 </main>
-<button id="backToTop" class="back-to-top" aria-label="Back to top">?Top</button>
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 PZ Survival Hub ?Not affiliated with The Indie Stone</p>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="posts.html">Posts</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="privacy-policy.html">Privacy</a>
-      <a href="terms-of-service.html">Terms</a>
-    </div>
-  </div>
+<div class="container footer-inner">
+<p>&copy; 2026 PZ Survival Hub | Free Project Zomboid survival guides | Updated weekly for Build 42.18 plus</p>
+<div class="footer-links"><a href="index.html">Home</a><a href="posts.html">All Guides</a><a href="post-map-louisville.html">Louisville Map</a><a href="post-map-rosewood.html">Rosewood Map</a><a href="base-building.html">Base Building</a><a href="sandbox.html">Sandbox</a><a href="about.html">About</a></div>
+</div>
 </footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
 <script src="script.js"></script>
 </body>
 </html>
