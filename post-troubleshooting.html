@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="article-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Troubleshooting Guide ?Project Zomboid Survival Hub</title>
+  <meta name="description" content="Fix common Project Zomboid problems: game crashes, save corruption, mod conflicts, performance issues, and multiplayer connection errors." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zomboidpro.it.com/post-troubleshooting.html" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="site-header glass">
+  <div class="container header-inner">
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Guides <span class="guides-count">5</span> <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="sandbox.html"><span class="dd-icon">&#9881;</span> Disable Zombie Respawn</a>
+          <a href="population-settings.html"><span class="dd-icon">👥</span> Population Settings</a>
+          <a href="base-building.html"><span class="dd-icon">🏠</span> Base Building</a>
+          <a href="mods-must-have-2026.html"><span class="dd-icon">🌐</span> PVE Servers & Mods</a>
+          <a href="b42-mods-working.html"><span class="dd-icon">🔧</span> B42 Mod Compatibility</a>
+        </div>
+      </div>
+      <a href="posts.html" class="active">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="posts.html">Posts</a>
+    <span class="sep">/</span>
+    <span>Troubleshooting Guide</span>
+  </div>
+  <article>
+    <h1>Troubleshooting Guide: Fix Crashes, Corrupt Saves & Mod Conflicts</h1>
+    <div class="article-meta">
+      <span class="updated-badge">New</span>
+      <span>May 9, 2026</span>
+      <span>Build 42</span>
+      <span>~8 min read</span>
+    </div>
+    <p>
+      Project Zomboid can crash for many reasons: mod conflicts, corrupted saves, outdated graphics drivers, or simply bad luck. This guide covers the most common problems and how to fix them.
+    </p>
+
+    <h2>Game Won't Launch</h2>
+    <ol>
+      <li><strong>Verify game files:</strong> In Steam, right-click Project Zomboid ?Properties ?Installed Files ?Verify Integrity of Game Files.</li>
+      <li><strong>Delete mod files:</strong> Navigate to <code>Zomboid/mods</code> and delete all mod folders. A broken mod can prevent the game from launching.</li>
+      <li><strong>Update Java:</strong> Project Zomboid requires Java. Ensure you have the latest version installed.</li>
+      <li><strong>Check minimum specs:</strong> Ensure your PC meets the minimum requirements (see <a href="post-low-pc-optimization.html">Low-Spec PC Guide</a>).</li>
+    </ol>
+
+    <h2>Game Crashes During Gameplay</h2>
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead>
+          <tr><th>Symptom</th><th>Likely Cause</th><th>Fix</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Crash on load screen</th><td>Mod conflict</td><td>Disable mods one by one to find the culprit</td></tr>
+          <tr><td><strong>Crash when entering building</th><td>Corrupted save or map issue</td><td>Restore from backup, verify game files</td></tr>
+          <tr><td><strong>Random crashes</th><td>Memory leak or overheating</td><td>Monitor RAM usage, clean PC fans, lower settings</td></tr>
+          <tr><td><strong>Crash after update</th><td>Incompatible mods or save format</td><td>Disable all mods, restore save from backup</td></tr>
+          <tr><td><strong>Crash with error message</th><td>Specific bug</td><td>Search the error on <a href="https://pzwiki.net" target="_blank">PZ Wiki</a> or forums</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Save File Corruption</h2>
+    <ol>
+      <li><strong>Exit the game completely.</strong></li>
+      <li><strong>Go to <code>Zomboid/saves/</code>.</strong></li>
+      <li><strong>Check if a backup folder exists.</strong> If yes, replace the corrupted save with the backup.</li>
+      <li><strong>If no backup:</strong> Try loading an older auto-save from the <code>saves/multiplayer</code> or <code>saves/singleplayer</code> folder.</li>
+      <li><strong>If nothing works:</strong> Start a new save. Always backup before major updates.</li>
+    </ol>
+
+    <div class="callout danger">
+      <p><strong>Prevention is key:</strong> Always backup saves before updating the game. See our <a href="post-save-safety.html">Save Safety Guide</a> for step-by-step instructions.</p>
+    </div>
+
+    <h2>Mod Conflicts</h2>
+    <ol>
+      <li><strong>Disable ALL mods.</strong> Launch the game and confirm it works without mods.</li>
+      <li><strong>Enable mods ONE at a time.</strong> Launch after each mod to check for crashes.</li>
+      <li><strong>When a crash occurs:</strong> The last enabled mod is the problem. Remove it.</li>
+      <li><strong>Check mod order:</strong> Some mods require specific load order. Check the mod's Workshop page.</li>
+      <li><strong>Use curated collections:</strong> Pre-tested mod lists (like bin^2's B42 Mod Pack) minimize conflicts.</li>
+    </ol>
+
+    <h2>Multiplayer Connection Issues</h2>
+    <ul>
+      <li><strong>Can't connect to server:</strong> Verify server IP and port. Check if the server is online.</li>
+      <li><strong>Kicked with "Mod Mismatch":</strong> All players must have the same mods enabled.</li>
+      <li><strong>High lag:</strong> Reduce view distance, lower player count, or switch servers.</li>
+      <li><strong>Desync issues:</strong> The host's internet may be unstable. Ask them to check their connection.</li>
+    </ul>
+
+    <h2>Performance Optimization</h2>
+    <ul>
+      <li>Lower texture quality and disable shadows</li>
+      <li>Cap FPS at 60 to prevent stuttering</li>
+      <li>Close background apps (Chrome, Discord, etc.)</li>
+      <li>Run in fullscreen mode (not windowed)</li>
+      <li>See our <a href="post-low-pc-optimization.html">Low-Spec PC Guide</a> for detailed settings</li>
+    </ul>
+
+    <div class="callout success">
+      <p><strong>Still having issues?</strong> Check the official Project Zomboid forums or <a href="https://pzwiki.net" target="_blank">PZ Wiki</a>. The community is very active and can help with specific problems.</p>
+    </div>
+  </article>
+  <section class="related-section">
+    <h3>Related Posts</h3>
+    <div class="related-grid">
+      <a href="post-save-safety.html" class="card">
+        <h3>Save Safety Guide</h3>
+        <p>How to backup and protect your save files.</p>
+      </a>
+      <a href="post-update-tracker.html" class="card">
+        <h3>Build 42 Update Tracker</h3>
+        <p>Track all patches and changes with player-friendly summaries.</p>
+      </a>
+      <a href="posts.html" class="card">
+        <h3>?All Posts</h3>
+        <p>View the complete list of daily guides and tips.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="comments-section">
+    <h3>💬 Join the Discussion</h3>
+    <p class="comments-intro">Have questions, tips, or experiences to share? Leave a comment below using your GitHub account. Your insights help other survivors!</p>
+    <div class="comments-box">
+      <div id="giscus-comments"></div>
+      <noscript>
+        <p>Please enable JavaScript to view comments. Or discuss directly on <a href="https://github.com/zhang1-CPU/zhang1-CPU.github.io/discussions" class="github-link" target="_blank" rel="noopener">GitHub Discussions ?/a></p>
+      </noscript>
+    </div>
+  </section>
+</main>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">?Top</button>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub ?Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

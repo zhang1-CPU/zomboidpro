@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="article-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Disable Zombie Respawn – Project Zomboid Survival Hub</title>
+  <meta name="description" content="Step-by-step guide to fully disable zombie respawn in Project Zomboid CDDA mode. Works for single player, existing saves, and private servers. Updated for Build 42." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zomboidpro.it.com/sandbox.html" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
+</head>
+<body>
+
+<div class="reading-progress" id="readingProgress"></div>
+
+<header class="site-header glass">
+  <div class="container header-inner">
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">☰</button>
+
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Guides <span class="guides-count">5</span> <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="sandbox.html" class="active"><span class="dd-icon">⚙️</span> Disable Zombie Respawn</a>
+          <a href="population-settings.html"><span class="dd-icon">👥</span> Population Settings</a>
+          <a href="base-building.html"><span class="dd-icon">🏠</span> Base Building</a>
+          <a href="mods-must-have-2026.html"><span class="dd-icon">🌐</span> PVE Servers & Mods</a>
+          <a href="b42-mods-working.html"><span class="dd-icon">🔧</span> B42 Mod Compatibility</a>
+        </div>
+      </div>
+      <a href="index.html#faq">FAQ</a>
+      <a href="posts.html">Posts</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <span>Disable Zombie Respawn</span>
+  </div>
+
+  <article>
+    <h1>How to Fully Disable Zombie Respawn in CDDA Mode (Build 42)</h1>
+
+    <div class="article-meta">
+      <span class="updated-badge">Updated May 2026</span>
+      <span>Build 42.17+</span>
+      <span>~5 min read</span>
+    </div>
+
+    <p>
+      CDDA (Cataclysm: Dark Days Ahead) mode is one of the most popular hardcore presets in Project Zomboid, known for its brutal survival mechanics and unforgiving zombie population. For many players, the constant zombie respawn makes long-term survival nearly impossible. Below is the complete step-by-step guide to fully disable zombie respawn in CDDA mode.
+    </p>
+
+    <div class="callout info">
+      <p><strong>Prerequisites:</strong> This guide works for both single-player and private multiplayer servers. Public servers often lock sandbox settings, so you cannot edit respawn values there.</p>
+    </div>
+
+    <h2>Step 1: Disable Respawn for a New Game</h2>
+    <p>This is the most reliable method with zero bugs or compatibility issues.</p>
+
+    <ol>
+      <li>Launch Project Zomboid and select <strong>Solo</strong> from the main menu.</li>
+      <li>Choose your spawn location (Muldraugh, Riverside, Rosewood, or West Point).</li>
+      <li>Under the game mode menu, select <strong>CDDA Preset</strong> to load the hardcore settings.</li>
+      <li>Click <strong>Customize Sandbox Settings</strong> to open the full settings menu.</li>
+      <li>In the left-hand tab menu, scroll down and select <strong>Advanced Zombie Options</strong> (the final tab in the Zombies section).</li>
+      <li>Edit the following values exactly as shown:
+        <ul>
+          <li><strong>Respawn Hours:</strong> Set to <code>0</code> – Fully disables zombie respawn in all visited areas</li>
+          <li><strong>Respawn Unseen Hours:</strong> Set to <code>0</code> – Disables respawn in unvisited map cells</li>
+          <li><strong>Respawn Multiplier:</strong> Set to <code>0.0</code> – Eliminates any leftover respawn chance</li>
+          <li><strong>Redistribute Hours:</strong> Set to <code>0</code> – Stops zombie migration between cells</li>
+        </ul>
+      </li>
+      <li>Click <strong>Save Settings</strong> at the bottom of the menu.</li>
+      <li>Complete character creation and spawn in. All zombies you kill will stay dead permanently.</li>
+    </ol>
+
+    <h2>Step 2: Disable Respawn in an Existing Save</h2>
+    <p>If you are already mid-run and do not want to start over:</p>
+
+    <ol>
+      <li>Exit your game and open the Steam Workshop.</li>
+      <li>Subscribe to the <strong>Change Sandbox Options</strong> mod (well-supported mod for editing save settings).</li>
+      <li>Launch Project Zomboid and enable the mod in your save file.</li>
+      <li>Load into your existing game.</li>
+      <li>Open the pause menu and select <strong>Edit Sandbox Settings</strong>.</li>
+      <li>Navigate to <strong>Advanced Zombie Options</strong> and edit the values as listed above.</li>
+      <li>Save and restart your game. Changes take effect immediately.</li>
+    </ol>
+
+    <h2>Step 3: Disable Respawn on a Private Server</h2>
+    <p>For dedicated private servers:</p>
+
+    <ol>
+      <li>Shut down your server completely. Do not edit settings while running.</li>
+      <li>Navigate to your server's <code>Zomboid/Server</code> folder.</li>
+      <li>Find the file named <code>&lt;YourServerName&gt;_SandboxVars.lua</code></li>
+      <li>Open it in a text editor and edit:
+        <pre>
+RespawnHours = 0,
+RespawnUnseenHours = 0,
+RespawnMultiplier = 0.0,
+RedistributeHours = 0,</pre>
+      </li>
+      <li>Save the file and restart your server.</li>
+    </ol>
+
+    <h2>Balanced Alternative Settings</h2>
+    <p>If you want to keep some tension without constant respawns, use these popular community settings:</p>
+
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead>
+          <tr><th>Setting</th><th>Recommended Value</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Respawn Hours</td><td>168</td><td>1 in-game week between respawns</td></tr>
+          <tr><td>Respawn Unseen Hours</td><td>72</td><td>3 in-game days for unvisited cells</td></tr>
+          <tr><td>Respawn Multiplier</td><td>0.05</td><td>Only 5% of killed zombies respawn</td></tr>
+          <tr><td>Redistribute Hours</td><td>48</td><td>Zombies migrate every 2 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout success">
+      <p><strong>Why this works:</strong> Cleared areas stay safe for a full week, while still making the world feel alive and dangerous long-term. This is the setup recommended for most players.</p>
+    </div>
+
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>Zombies still respawning after setting to 0:</strong> Make sure you edited Advanced Zombie Options, not basic Zombie Population. Update to Build 42.17+ if on an unstable patch.</li>
+      <li><strong>Settings won't save in existing save:</strong> Ensure the Change Sandbox Options mod is enabled and up to date. Restart your game after enabling.</li>
+      <li><strong>Server settings won't apply:</strong> Server must be fully shut down before editing SandboxVars.lua. Check syntax – all lines must end with a comma.</li>
+    </ul>
+  </article>
+
+  <section class="related-section">
+    <h3>Related Guides</h3>
+    <div class="related-grid">
+      <a href="b42-mods-working.html" class="card">
+        <h3>Build 42 Mod Compatibility</h3>
+        <p>Complete guide to which mods work, which are broken, and alternatives for Build 42.</p>
+      </a>
+      <a href="base-building.html" class="card">
+        <h3>Population Settings Guide</h3>
+        <p>Learn how to tune early vs late-game zombie difficulty with the population ramp system.</p>
+      </a>
+      <a href="base-building.html" class="card">
+        <h3>Base Building Guide</h3>
+        <p>From location selection to farming and water – build a base that lasts.</p>
+      </a>
+      <a href="index.html#first-week" class="card">
+        <h3>First 7 Days Survival</h3>
+        <p>The essential day-by-day guide for surviving your first week in Project Zomboid.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub – Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="sandbox.html">Sandbox</a>
+      <a href="base-building.html">Base Building</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
