@@ -1,78 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="article-page">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Build 42 Farming Guide | Project Zomboid Survival Hub</title>
-  <meta name="description" content="Complete farming guide for Project Zomboid Build 42: crop rotation, soil quality, animal husbandry, and sustainable food production." />
+  <meta name="description" content="Complete farming guide for Project Zomboid Build 42: crop rotation, soil quality, animal husbandry, food preservation methods, and sustainable food production strategies." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://zomboidpro.it.com/post-farming-guide.html" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <header class="site-header glass">
   <div class="container header-inner">
-    <a href="index.html" class="site-logo">PZ Survival Hub</a>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Guides <span class="guides-count">5</span> <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="sandbox.html"><span class="dd-icon">⚙️</span> Disable Zombie Respawn</a>
+          <a href="population-settings.html"><span class="dd-icon">👥</span> Population Settings</a>
+          <a href="base-building.html"><span class="dd-icon">🏠</span> Base Building</a>
+          <a href="mods-must-have-2026.html"><span class="dd-icon">🌐</span> PVE Servers & Mods</a>
+          <a href="b42-mods-working.html"><span class="dd-icon">🔧</span> B42 Mod Compatibility</a>
+        </div>
+      </div>
       <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
     </nav>
   </div>
 </header>
 <main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="posts.html">Posts</a>
+    <span class="sep">/</span>
+    <span>Build 42 Farming Guide</span>
+  </div>
   <article>
     <h1>Build 42 Farming Guide: Sustainable Food Production</h1>
     <div class="article-meta">
       <span class="updated-badge">New</span>
       <span>June 20, 2026</span>
       <span>Build 42</span>
+      <span>~9 min read</span>
     </div>
-    <p>Farming is essential for long-term survival in Project Zomboid. Build 42 introduces significant improvements to the farming system.</p>
+    <p>Farming is essential for long-term survival in Project Zomboid. Build 42 introduces significant improvements to the farming system, making it more realistic, strategic, and rewarding. This guide covers everything from basic gardening to advanced sustainable agriculture, including the new animal husbandry features.</p>
     <h2>Getting Started with Farming</h2>
-    <ul>
-      <li>Farming Tools: Shovel, rake, watering can</li>
-      <li>Seeds: Found in gardening stores, supermarkets</li>
-      <li>Fertilizer: Compost, manure, or fertilizer bags</li>
-      <li>Water Source: Rain collector, water bottles</li>
+    <p>To start farming in Build 42, you will need the following basic tools and materials:</p>
+    <ul class="bullet-list spaced">
+      <li><strong>Farming Tools:</strong> Shovel for digging, rake for soil preparation, watering can for irrigation.</li>
+      <li><strong>Seeds:</strong> Found in gardening stores, supermarkets, and some residential houses. Different seeds for different seasons.</li>
+      <li><strong>Fertilizer:</strong> Compost from rotting food, manure from animals, or fertilizer bags from stores.</li>
+      <li><strong>Water Source:</strong> Rain collectors, water bottles, or nearby water bodies for irrigation.</li>
     </ul>
+    <div class="callout info"><p><strong>Tip:</strong> Start small. A 2x2 garden is enough to sustain one person for early survival. Expand your farming operation as you gain experience, tools, and secure storage for your harvest.</p></div>
     <h2>Crop Types and Seasons</h2>
-    <table class="info-table">
-      <thead><tr><th>Crop</th><th>Planting Season</th><th>Growth Time</th></tr></thead>
-      <tbody>
-        <tr><td>Carrots</td><td>Spring, Autumn</td><td>45 days</td></tr>
-        <tr><td>Potatoes</td><td>Spring, Summer</td><td>55 days</td></tr>
-        <tr><td>Corn</td><td>Summer</td><td>70 days</td></tr>
-        <tr><td>Tomatoes</td><td>Summer</td><td>50 days</td></tr>
-        <tr><td>Cabbage</td><td>Spring, Autumn</td><td>60 days</td></tr>
-        <tr><td>Wheat</td><td>Spring</td><td>80 days</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead><tr><th>Crop</th><th>Planting Season</th><th>Growth Time</th><th>Nutrition Value</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Carrots</strong></td><td>Spring, Autumn</td><td>45 days</td><td>Medium</td><td>Easy to grow, good starter crop for beginners</td></tr>
+          <tr><td><strong>Potatoes</strong></td><td>Spring, Summer</td><td>55 days</td><td>High</td><td>Versatile vegetable, can be stored long-term in root cellars</td></tr>
+          <tr><td><strong>Corn</strong></td><td>Summer</td><td>70 days</td><td>High</td><td>Requires lots of space and water. Good for animal feed too</td></tr>
+          <tr><td><strong>Tomatoes</strong></td><td>Summer</td><td>50 days</td><td>High</td><td>Need support stakes. Excellent for cooking and salads</td></tr>
+          <tr><td><strong>Cabbage</strong></td><td>Spring, Autumn</td><td>60 days</td><td>Medium</td><td>Cold-resistant. Stores well through winter</td></tr>
+          <tr><td><strong>Beans</strong></td><td>Summer</td><td>40 days</td><td>Medium</td><td>Grow on trellises. Fix nitrogen in soil for crop rotation</td></tr>
+          <tr><td><strong>Wheat</strong></td><td>Spring</td><td>80 days</td><td>High</td><td>Requires threshing for flour. Essential for baking</td></tr>
+          <tr><td><strong>Herbs</strong></td><td>Any season</td><td>25 days</td><td>Low</td><td>Used for medicine, cooking, and preserving food</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Soil Quality and Fertilizer</h2>
+    <p>Build 42 introduces soil quality mechanics that significantly affect crop yield and farm sustainability:</p>
+    <ul class="bullet-list spaced">
+      <li><strong>Soil Types:</strong> Different areas have different soil quality. Forested areas have rich natural soil, while sandy areas near rivers are poor for farming.</li>
+      <li><strong>Fertilizer:</strong> Use compost or manure to improve soil quality over time. Compost can be made from rotting food and plant material.</li>
+      <li><strong>Crop Rotation:</strong> Rotate crops to maintain soil health. Plant nitrogen-fixing plants like beans to replenish soil nutrients between heavy-feeding crops.</li>
+      <li><strong>Watering:</strong> Regular watering improves yield and prevents crop death. Drought stress reduces growth significantly and can kill young plants.</li>
+    </ul>
+    <h2>Advanced Farming Techniques</h2>
+    <div class="content-grid">
+      <article class="card"><h3>Greenhouses</h3><p>Build greenhouses to extend growing seasons and protect crops from frost. Greenhouses with glass panels extend harvest windows and enable winter farming in Build 42.</p></article>
+      <article class="card"><h3>Irrigation Systems</h3><p>Set up drip irrigation using rain collectors and pipes for automated watering. This reduces daily maintenance time and prevents crop loss from forgetfulness.</p></article>
+      <article class="card"><h3>Companion Planting</h3><p>Plant compatible crops together to improve yields and deter pests naturally. Marigolds repel many insects, while beans fix nitrogen for neighboring plants.</p></article>
+    </div>
     <h2>Animal Husbandry</h2>
-    <table class="info-table">
-      <thead><tr><th>Animal</th><th>Food Source</th><th>Product</th></tr></thead>
-      <tbody>
-        <tr><td>Chickens</td><td>Grain, insects</td><td>Eggs, meat</td></tr>
-        <tr><td>Rabbits</td><td>Vegetables, hay</td><td>Meat, fur</td></tr>
-        <tr><td>Goats</td><td>Grass, hay</td><td>Milk, meat</td></tr>
-      </tbody>
-    </table>
-    <h2>Food Preservation</h2>
-    <ul>
-      <li>Drying - Use drying racks for fruits, vegetables, and meat</li>
-      <li>Canning - Preserve food in jars for long-term storage</li>
-      <li>Smoking - Smoke meat to extend its shelf life</li>
-      <li>Root Cellar - Store root vegetables in cool, dark conditions</li>
+    <p>Build 42 introduces animal farming for sustainable long-term food production:</p>
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead><tr><th>Animal</th><th>Food Source</th><th>Product</th><th>Housing Needs</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Chickens</strong></td><td>Grain, insects, kitchen scraps</td><td>Eggs, meat, feathers</td><td>Chicken coop with fenced outdoor area</td></tr>
+          <tr><td><strong>Rabbits</strong></td><td>Vegetables, hay, fresh grass</td><td>Meat, fur for clothing</td><td>Hutch with nesting box and shelter</td></tr>
+          <tr><td><strong>Goats</strong></td><td>Grass, hay, browse plants</td><td>Milk, meat, leather materials</td><td>Fenced pasture with shelter</td></tr>
+          <tr><td><strong>Cows</strong></td><td>Grass, hay, silage, grain</td><td>Milk, meat, leather for armor</td><td>Large fenced pasture with barn</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout success"><p><strong>Pro Tip:</strong> Chickens are the easiest animals to start with in Build 42. They require minimal care, produce eggs regularly, and provide a steady source of protein with minimal infrastructure investment.</p></div>
+    <h2>Food Preservation Methods</h2>
+    <p>Store your harvest for lean times with these preservation methods that work well in Build 42:</p>
+    <ul class="bullet-list spaced">
+      <li><strong>Drying:</strong> Use drying racks for fruits, vegetables, and meat. Preserves food for weeks or months depending on conditions.</li>
+      <li><strong>Canning:</strong> Preserve food in jars using heat processing for long-term storage. Requires jars, lids, and a heat source.</li>
+      <li><strong>Smoking:</strong> Smoke meat to extend shelf life and add flavor. Requires a smokehouse or improvised smoke pit.</li>
+      <li><strong>Root Cellar:</strong> Store root vegetables in cool, dark conditions to extend freshness through winter months.</li>
+      <li><strong>Freezing:</strong> Use freezers if you have electricity and a reliable power source. Excellent for long-term food storage.</li>
+    </ul>
+    <h2>Common Farming Mistakes to Avoid</h2>
+    <div class="callout warning">
+      <ul class="bullet-list spaced">
+        <li><strong>Overplanting:</strong> Do not plant more than you can water, harvest, and store. Wasted seeds and crops hurt your long-term survival.</li>
+        <li><strong>Ignoring Seasons:</strong> Planting out of season wastes seeds and time. Check the planting calendar and plan your harvest schedule carefully.</li>
+        <li><strong>No Pest Control:</strong> Zombies and wildlife can destroy crops. Build fences, use companion planting, and secure your farm area.</li>
+        <li><strong>Poor Storage:</strong> Harvested crops spoil quickly without proper storage. Build root cellars, drying racks, and refrigeration before harvesting.</li>
+      </ul>
+    </div>
+    <h2>Farming Skill Progression</h2>
+    <p>Level up your farming skill for better yields and to unlock new recipes and techniques:</p>
+    <ul class="bullet-list spaced">
+      <li><strong>Level 1-3:</strong> Basic gardening, small plots, simple crop varieties. Focus on survival staples.</li>
+      <li><strong>Level 4-6:</strong> Advanced crops, fertilizer management, animal care basics, and medium-scale farming operations.</li>
+      <li><strong>Level 7-10:</strong> Greenhouse construction and management, complex irrigation systems, hydroponics, and large-scale commercial farming.</li>
     </ul>
   </article>
   <section class="related-section">
     <h3>Related Posts</h3>
-    <a href="post-food-cooking.html" class="card">Food & Cooking Guide</a>
-    <a href="posts.html" class="card">All Posts</a>
+    <div class="related-grid">
+      <a href="post-food-cooking.html" class="card"><h3>Food & Cooking Guide</h3><p>Nutrition system explained with beginner recipes and meal planning.</p></a>
+      <a href="base-building.html" class="card"><h3>Base Building Guide</h3><p>Design your farm base for maximum efficiency and defense.</p></a>
+      <a href="posts.html" class="card"><h3>All Posts</h3><p>View the complete collection of Build 42 survival guides.</p></a>
+    </div>
   </section>
 </main>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
 <footer class="site-footer">
-  <p>© 2026 PZ Survival Hub</p>
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub | Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+  </div>
 </footer>
 <script src="script.js"></script>
 </body>

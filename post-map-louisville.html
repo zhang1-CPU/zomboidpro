@@ -1,68 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="article-page">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Louisville Map Guide | Project Zomboid Survival Hub</title>
-  <meta name="description" content="Louisville is the largest city in Project Zomboid. Learn about its high-risk loot zones, hidden safe areas, and advanced survival strategies." />
+  <meta name="description" content="Louisville is the largest city in Project Zomboid. Learn about its high-risk loot zones, hidden safe areas, and advanced survival strategies for Build 42." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://zomboidpro.it.com/post-map-louisville.html" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5420550088713746" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqbv0ab9w9");
+  </script>
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <header class="site-header glass">
   <div class="container header-inner">
-    <a href="index.html" class="site-logo">PZ Survival Hub</a>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
+    <div class="brand-block">
+      <a href="index.html" class="site-logo">PZ Survival Hub</a>
+      <p class="site-tagline">Practical survival strategy for Build 42</p>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav" id="mainNav">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#first-week">First Week</a>
+      <a href="index.html#medical">Medical</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Guides <span class="guides-count">5</span> <span class="arrow">▼</span></button>
+        <div class="dropdown-menu">
+          <a href="sandbox.html"><span class="dd-icon">⚙️</span> Disable Zombie Respawn</a>
+          <a href="population-settings.html"><span class="dd-icon">👥</span> Population Settings</a>
+          <a href="base-building.html"><span class="dd-icon">🏠</span> Base Building</a>
+          <a href="mods-must-have-2026.html"><span class="dd-icon">🌐</span> PVE Servers & Mods</a>
+          <a href="b42-mods-working.html"><span class="dd-icon">🔧</span> B42 Mod Compatibility</a>
+        </div>
+      </div>
       <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
     </nav>
   </div>
 </header>
 <main class="section container">
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="posts.html">Posts</a>
+    <span class="sep">/</span>
+    <span>Louisville Map Guide</span>
+  </div>
   <article>
     <h1>Louisville Map Guide: Surviving the Big City</h1>
     <div class="article-meta">
-      <span class="updated-badge">New</span>
+      <span class="updated-badge">Hot</span>
       <span>June 20, 2026</span>
       <span>Build 42</span>
+      <span>~8 min read</span>
     </div>
-    <p>Louisville is the largest and most dangerous city in Project Zomboid. With its massive urban sprawl, high zombie density, and incredible loot potential, Louisville offers both great rewards and extreme risks.</p>
+    <p>Louisville is the largest and most dangerous city in Project Zomboid. With its massive urban sprawl, high zombie density, and incredible loot potential, Louisville offers both great rewards and extreme risks. This guide covers everything you need to know before heading into the big city.</p>
     <h2>Overview</h2>
-    <p>Louisville is located in the northeastern quadrant of the map. It features skyscrapers, malls, hospitals, police stations, and a military checkpoint.</p>
+    <p>Louisville is located in the northeastern quadrant of the map. It features skyscrapers, large malls, multiple hospitals, police stations, and military checkpoints. The city is divided into several districts, each with its own characteristics and risks. The further you venture into downtown, the higher the zombie population and loot quality.</p>
     <h2>Key Districts</h2>
-    <table class="info-table">
-      <thead><tr><th>District</th><th>Risk Level</th><th>Loot Quality</th></tr></thead>
-      <tbody>
-        <tr><td>West Louisville</td><td>Medium</td><td>High</td></tr>
-        <tr><td>Downtown</td><td>Extreme</td><td>Extreme</td></tr>
-        <tr><td>University District</td><td>High</td><td>High</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table class="info-table">
+        <thead><tr><th>District</th><th>Risk Level</th><th>Loot Quality</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>West Louisville</strong></td><td>Medium</td><td>High</td><td>Residential area with good loot, less dense zombie population. Ideal first entry point for scouting.</td></tr>
+          <tr><td><strong>Downtown</strong></td><td>Extreme</td><td>Extreme</td><td>Skyscrapers, malls, and government buildings – very dangerous. Requires team play or extremely careful solo tactics.</td></tr>
+          <tr><td><strong>University District</strong></td><td>High</td><td>High</td><td>Colleges, libraries, and research facilities with skill books and rare loot. Crowded but manageable with planning.</td></tr>
+          <tr><td><strong>Industrial Zone</strong></td><td>High</td><td>High</td><td>Factories, warehouses, and construction yards with materials and construction supplies.</td></tr>
+          <tr><td><strong>Waterfront</strong></td><td>Medium</td><td>Medium</td><td>Warehouses and docks with food, containers, and escape routes via boat.</td></tr>
+        </tbody>
+      </table>
+    </div>
     <h2>Best Base Locations</h2>
-    <ul>
-      <li>West Louisville Houses - Quiet residential streets</li>
-      <li>University Dorms - Multiple rooms, good defenses</li>
-      <li>Suburban Edge - Houses on the outskirts</li>
-    </ul>
+    <div class="content-grid">
+      <article class="card"><h3>West Louisville Houses</h3><p>Quiet residential streets with easy access to downtown but far enough to stay safe. The best entry-level base for players first exploring Louisville.</p></article>
+      <article class="card"><h3>University Dorms</h3><p>Multiple rooms, good defense potential, but higher zombie presence. Good mid-game base when you have supplies and a vehicle ready.</p></article>
+      <article class="card"><h3>Suburban Edge</h3><p>Houses on the outskirts offer safety with quick access to the city. Best spot for players who want the Louisville loot without living in the chaos.</p></article>
+    </div>
+    <div class="callout danger"><p><strong>Warning:</strong> Never set up a base in downtown Louisville unless you are prepared for constant horde attacks. The density is overwhelming for beginners and solo players.</p></div>
     <h2>High-Value Loot Locations</h2>
-    <ul>
-      <li>Louisville Mall - Clothing, food, tools, electronics</li>
-      <li>Police Department - Firearms, ammo, body armor</li>
-      <li>General Hospital - Top-tier medical supplies</li>
-      <li>Military Checkpoint - High-grade weapons (extremely dangerous)</li>
+    <ul class="bullet-list spaced">
+      <li><strong>Louisville Mall:</strong> Massive shopping center with clothing, food, tools, and electronics. One of the highest-density loot zones in the game.</li>
+      <li><strong>Police Department:</strong> Firearms, ammo, body armor, and tactical gear. Well-defended building but expect heavy zombie presence.</li>
+      <li><strong>General Hospital:</strong> Top-tier medical supplies, including rare medications and first aid kits.</li>
+      <li><strong>Military Checkpoint:</strong> High-grade weapons, armor, and ammunition. Extremely dangerous area – team play recommended.</li>
+      <li><strong>Hardware Stores:</strong> Building materials, tools, and construction supplies needed for base building.</li>
     </ul>
-    <div class="callout warning"><p>Recommended For: Experienced players only. Louisville is not beginner-friendly.</p></div>
+    <h2>Survival Tips for Louisville</h2>
+    <div class="content-grid">
+      <article class="card"><h3>Movement Strategy</h3><p>Use side streets and alleys to avoid main roads. Zombies are more concentrated on major thoroughfares. Always have an escape route planned and keep a vehicle nearby.</p></article>
+      <article class="card"><h3>Noise Management</h3><p>Silent weapons are essential in Louisville. Avoid using guns in the city center – the noise will attract hordes from blocks away. Keep axe and crowbar as primary weapons.</p></article>
+      <article class="card"><h3>Scouting Routes</h3><p>Plan circular routes that start and end at your base. Never get trapped in a dead end. Use the river as a natural barrier and escape route when possible.</p></article>
+    </div>
+    <div class="callout warning"><p><strong>Recommended For:</strong> Experienced players only. Louisville is not a beginner-friendly location due to its high zombie density, complex layout, and aggressive combat scenarios.</p></div>
+    <h2>Advanced Strategies</h2>
+    <p>For advanced players looking to fully exploit Louisville for long-term survival, here are several strategies that work well in Build 42:</p>
+    <ul class="bullet-list spaced">
+      <li><strong>Roof Hopping:</strong> Many buildings in downtown Louisville are connected via rooftops. Learn the roof network to traverse the city without touching the ground.</li>
+      <li><strong>Vehicle Convoy:</strong> Use multiple vehicles to create mobile bases and supply depots around the city. Park strategically for quick escape routes.</li>
+      <li><strong>Water Access:</strong> The Ohio River provides a safe route for moving supplies between districts. Use boats to bypass heavily infested streets.</li>
+      <li><strong>Sniper Perches:</strong> Tall buildings offer excellent vantage points for clearing hordes from a distance using rifles in Build 42.</li>
+    </ul>
   </article>
   <section class="related-section">
     <h3>Related Posts</h3>
-    <a href="post-map-rosewood.html" class="card">Rosewood Map Guide</a>
-    <a href="posts.html" class="card">All Posts</a>
+    <div class="related-grid">
+      <a href="post-map-rosewood.html" class="card"><h3>Rosewood Map Guide</h3><p>Safe base spots and beginner-friendly loot routes.</p></a>
+      <a href="post-map-muldraugh.html" class="card"><h3>Muldraugh Map Guide</h3><p>Medium-density town with storage units and trailer parks.</p></a>
+      <a href="posts.html" class="card"><h3>All Posts</h3><p>View the complete list of Build 42 guides.</p></a>
+    </div>
   </section>
 </main>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
 <footer class="site-footer">
-  <p>© 2026 PZ Survival Hub</p>
+  <div class="container footer-inner">
+    <p>© 2026 PZ Survival Hub | Not affiliated with The Indie Stone</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+  </div>
 </footer>
 <script src="script.js"></script>
 </body>
